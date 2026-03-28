@@ -19,25 +19,29 @@
             justify-content: center;
             font-size: 45px;
         }
-
         .container {
+            position: relative;
             display: flex;
-            gap: 20px;
             justify-content: center;
             margin-top: 40px;
+            width: 800px; /* keeps layout stable */
         }
-
+        
+        /* base card style */
         .container div {
+            position: relative;
             display: flex;
-            flex-direction:column;
-            justify-content:flex-start;
+            flex-direction: column;
+            justify-content: flex-start;
             background: black;
             border: 4px solid white;
             width: 250px;
             height: 250px;
             padding: 20px;
+            border-radius: 20px;
             transition: transform 0.3s ease, background 0.3s ease;
         }
+        
         .container div li {
             color:black;
         }
@@ -47,32 +51,34 @@
         .container div p {
             color:black;
         }
-        /* left card */
-        .card-left {
-            display: flex;
-            border-radius: 20px;
-            flex-grow:0.75;
-        }
 
-        /* middle card */
+        /* LEFT CARD — hidden behind middle */
+        .card-left {
+            position: absolute;
+            left: -12.5%;      /* show only 1/8 of the card */
+            top: 0;
+            opacity: 0.6;      /* subtle behind effect */
+            z-index: 1;
+        }
+        
+        /* MIDDLE CARD — main card */
         .card-middle {
-            display: flex;
-            border-radius: 20px;
-            flex-grow:2;
+            z-index: 2;
         }
+        
+        /* RIGHT CARD — normal */
         .card-right {
-            display: flex;
-            border-radius:20px;
-            flex-grow:0.75;
+            margin-left: 280px; /* push it to the right of middle card */
+            z-index: 1;
         }
-        /* right card */
         
         /* hover effect */
         .container div:hover {
             transform: scale(1.05);
             background: white;
-            color:black;
+            color: black;
         }
+
         
     </style>
 </head>
