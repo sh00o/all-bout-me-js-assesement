@@ -1,4 +1,5 @@
 const back_card = document.getElementById("back_card");
+const container = document.getElementById(".container");
 back_card.onclick = () => {
-  back_card.classList.toggle("move-front-cards");
+  container.classList.toggle("move-front-cards");
 };
