@@ -79,15 +79,16 @@
 
         
         /* hover effect */
-        .move-front-cards {
-            transform: scale(1.05);
+        .active .card-left {
+            transform: scale(1.05)
+            z-index:3;
             background: white;
             color: black;
         }
-        .move-front-cards .card-right {
+        .active .card-right {
             transform: translateX(-50%);
         }
-        .move-front-cards .card-middle{
+        .active .card-middle{
             transform: translateX(-50%);
         }
 
