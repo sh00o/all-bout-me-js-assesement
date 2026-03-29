@@ -53,23 +53,30 @@
 
         /* LEFT CARD — hidden behind middle */
         .card-left {
-            position: absolute;
-            left: -12.5%;      /* show only 1/8 of the card */
+            left: -12.5%;   /* show only 1/8 of the card */
             top: 0;
-            opacity: 0.6;      /* subtle behind effect */
+            opacity: 0.6;
             z-index: 1;
         }
+
         
         /* MIDDLE CARD — main card */
         .card-middle {
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
             z-index: 2;
         }
+
         
         /* RIGHT CARD — normal */
         .card-right {
-            margin-left: 280px; /* push it to the right of middle card */
+            right: -12.5%;  /* mirror of left card */
+            top: 0;
+            opacity: 0.6;
             z-index: 1;
         }
+
         
         /* hover effect */
         .container div:hover {
