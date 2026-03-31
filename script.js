@@ -1,6 +1,6 @@
 const back_card = document.getElementById("back_card");
 const middle_card = document.getElementById("middle_card");
-const right_card = document.getElementById("right_card");
+const front_card = document.getElementById("front_card");
 back_card.onclick = () => {
   back_card.classList.toggle("active");
 };
