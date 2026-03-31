@@ -7,6 +7,6 @@ back_card.onclick = () => {
 middle_card.onclick = () => {
   middle_card.classList.toggle("active");
 };
-right_card.onclick = () => {
-  right_card.classList.toggle("active");
+front_card.onclick = () => {
+  front_card.classList.toggle("active");
 };
