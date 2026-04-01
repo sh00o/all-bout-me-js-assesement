@@ -8,7 +8,9 @@ back_card.onclick = () => {
 };
 middle_card.onclick = () => {
   front_card.classList.toggle("move");
+  console.log("DOMER")
 };
 front_card.onclick = () => {
   front_card.classList.toggle("active");
+   console.log("DOMER")
 };
