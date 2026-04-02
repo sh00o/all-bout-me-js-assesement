@@ -8,8 +8,10 @@ back_card.onclick = () => {
 };
 middle_card.onclick = () => {
   back_card.classList.remove("active")
+  middle_card.classList.remove("move")
   middle_card.classList.toggle("active")
-  front_card.classList.toggle("move");
+  front_card.classList.remove("move");
+  front_card.classList.add("move");
   console.log("DOMER")
 };
 front_card.onclick = () => {
