@@ -14,6 +14,8 @@ middle_card.onclick = () => {
   console.log("DOMER")
 };
 front_card.onclick = () => {
+  middle_card.classList.toggle("active")
   front_card.classList.toggle("active");
+  front_card.classList.remove("move");
    console.log("DOMER")
 };
